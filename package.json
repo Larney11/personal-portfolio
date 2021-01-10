@@ -1,7 +1,7 @@
 {
-  "name": "Demo",
+  "name": "personal-portfolio",
   "version": "1.0.0",
-  "description": "demo project.",
+  "description": "CV Website",
   "scripts": {
     "lite": "lite-server --port 10001",
     "start": "npm run lite"

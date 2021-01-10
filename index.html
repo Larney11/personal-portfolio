@@ -2,12 +2,140 @@
 <html>
 <head>
   <title>Lar Harney</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="Lar Harney - Web Developer - Personal Portfolio">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="Lar Harney,Web Developer,HTML,CSS,JavaScript">
+  <meta name="author" content="Lar Harney">
   <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap" rel="stylesheet" />
 </head>
 
 <body>
+  <!-- navigation -->
+  <header>
+    <div class="topnav" id="myTopnav">
+      <a href="#home">Home</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </header>
   <main>
 
+    <!-- section: home -->
+    <section id="home">
+
+      <img id="profile-pic" src="assets/profile.jpeg" alt="Lar Harney web developer profile picture" />
+      <h1>Lar Harney</h1>
+      <p>Web Developer</p>
+    </section>
+
+    <!-- section: projects-->
+    <section id="projects">
+
+      <h2 class="section-header"><span>Projects</span></h2>
+      <div class="grid">
+
+        <div class="project-container">
+
+          <a href="https://codepen.io/LarHarney/full/GRqVVXG" target="_blank">
+
+            <img class="project-image" src="assets/quoteMachine.png" alt="Quote machine project screenshot" />
+
+            <p class="project-title">
+              <span class="code">&lt;</span>
+              Random Quote Generator
+              <span class="code">&#47;&gt;</span>
+            </p>
+          </a>
+          <div id="project-icons-container">
+            <a href="https://github.com/Larney11/random-quote-machine" target="_blank">
+              <i class="fa fa-github project-icon" aria-hidden="true"> GitHub</i>
+            </a>
+            <a href="https://codepen.io/LarHarney/full/GRqVVXG" target="_blank">
+              <i class="fab fa-codepen project-icon" aria-hidden="true"> Codepen</i>
+            </a>
+          </div>
+        </div>
+
+        <div class="project-container">
+          
+          <a href="https://codepen.io/LarHarney/full/GRqVVXG" target="_blank">
+
+            <img class="project-image" 
+              src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/random-quote-machine.png"
+            />
+            <p class="project-title">
+              <span class="code">&lt;</span>
+              Random Quote Generator
+              <span class="code">&#47;&gt;</span>
+            </p>
+          </a>
+          <div id="project-icons-container">
+            <a href="https://github.com/Larney11/random-quote-machine" target="_blank">
+              <i class="fa fa-github project-icon" aria-hidden="true"> GitHub</i>
+            </a>
+            <a href="https://codepen.io/LarHarney/full/GRqVVXG" target="_blank">
+              <i class="fab fa-codepen project-icon" aria-hidden="true"> Codepen</i>
+            </a>
+          </div>
+        </div>
+
+        <div class="project-container">
+          
+          <a href="https://codepen.io/LarHarney/full/GRqVVXG" target="_blank">
+
+            <img class="project-image" 
+              src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/random-quote-machine.png"
+            />
+            <p class="project-title">
+              <span class="code">&lt;</span>
+              Random Quote Generator
+              <span class="code">&#47;&gt;</span>
+            </p>
+          </a>
+          <div id="project-icons-container">
+            <a href="https://github.com/Larney11/random-quote-machine" target="_blank">
+              <i class="fa fa-github project-icon" aria-hidden="true"> GitHub</i>
+            </a>
+            <a href="https://codepen.io/LarHarney/full/GRqVVXG" target="_blank">
+              <i class="fab fa-codepen project-icon" aria-hidden="true"> Codepen</i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section: contact-->
+    <section id="contact">
+
+      <h2 class="section-header"><span>Contact</span></h2>
+      <h2>Lets work together</h2>
+      <p>Please do not hestitate to contact me</p>
+      <div id="contact-container">
+
+        <a class="button contact-details" href="https://www.linkedin.com/in/lar-harney/" target="_blank">
+          <i class="fa fa-linkedin-square" aria-hidden="true"> <p>LinkedIn</p></i>
+        </a>
+        <a class="button contact-details" href="https://github.com/Larney11" target="_blank">
+          <i class="fa fa-github" aria-hidden="true"> <p>GitHub</p> </i>
+        </a>
+        <a class="button contact-details" href="mailto:larharneycomputing@gmail.com">
+          <i class="fa fa-at" aria-hidden="true"> <p>Email Me</p></i>
+        </a>
+      </div>
+    </section>
   </main>
+
+  <footer id="footer"></footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/scripts.js"></script>
 </body>
 </html>
