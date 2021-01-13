@@ -163,7 +163,6 @@ body {
 .grid-col-two {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  /* grid-gap: 2rem; */
 }
 
 @media(max-width: 1000px) {
@@ -206,6 +205,42 @@ body {
   border: var(--yellow) 2px solid;
 }
 
+/* ----- Certification ----- */
+.certification-container {
+  width: 75%;
+  margin: 0 auto;
+}
+
+@media(max-width: 600px) {
+  .certification-container {
+    width: 95%;
+  }
+}
+
+.certification-row {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid #e6e9ec;
+  margin: 10px 0;
+}
+
+.certification-logo {
+  height: 75px;
+  width: 75px;
+  margin: 5px 20px 0 5px;
+}
+
+.certification-details {
+  text-align: left;
+  line-height: 0.5rem;
+  padding: 0;
+  margin: 0;
+}
+
+.certification-details-row-title {
+  font-weight: bold;
+  line-height: 1rem;
+}
 
 /* ----- Contact ----- */
 #contact {
