@@ -26,5 +26,5 @@ function myFunction() {
 
 $("form").submit(function(){
   var name = $('#contact-form').find('input[name="name"]').val();
-  alert("Message sent! \nThanks for reaching out, "+name+"\nI will be in touch shortly.");
+  alert("Message sent! \nThanks for reaching out, "+name+".\nI will be in touch shortly.");
 });

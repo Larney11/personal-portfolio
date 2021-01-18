@@ -2,6 +2,7 @@
 :root {
   --yellow: #efd365;
   --grey: #595a5c;
+  --lightGrey: rgb(168, 168, 168);
 }
 
 html {
@@ -256,40 +257,11 @@ body {
   font-size: 1.2rem;
 }
 
-.contact-container{
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.contact-details {
-  font-size: 1.8rem; 
-  transition: transform 0.3s ease-out;
-  text-decoration: none;
-  color: black
-}
-
-.contact-details:hover {
-  transform: translateY(8px);
-}
-
-.fa-linkedin-square {
-  color: #0E76A8;
-}
-
-.fa-phone-square {
-  color: #78C257;
-}
-
 i p {
   display: inline-block;
   color: black;
   padding: 0;
   margin:0;
-}
-
-.button {
-  display: inline-block;
-  padding: 0.5rem 1rem;
 }
 
 .section {
@@ -419,7 +391,52 @@ i p {
 
 /* ----- Footer ----- */
 #footer {
-  height: 3rem;
+  display: flex;
+  flex-direction: column;
   width: 100%;
+  padding: 1rem;
   background-color: #333;
+  color: var(--lightGrey);
+}
+
+.icon-button {
+  text-decoration: none;
+}
+
+.icons-container {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  padding-bottom: 1rem;
+}
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  height: 46px;
+  width: 46px;
+  margin: auto 0.5rem;
+  font-size: 1.8rem; 
+  background-color: transparent;
+  border: 2px var(--yellow) solid;
+  border-radius: 50%;
+  transition: transform 0.3s ease-out;
+}
+
+.icon-container:hover {
+  transform: translateY(8px);
+  background-color: white;
+  border-color: var(--yellow);
+  color: black;
+}
+
+.icon {
+  color: white;
+  text-decoration: none;
+}
+
+.icon-container:hover .icon {
+  color: black; 
 }
