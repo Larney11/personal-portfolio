@@ -86,7 +86,7 @@ body {
 /* ----- Projects ----- */
 #projects {
   text-align: center;
-  padding: 2rem 0;
+  padding-top: 2rem;
   margin: 0 2rem;
 }
 
@@ -94,7 +94,6 @@ body {
   text-decoration: none;
   color: black;
 }
-
 
 @media(max-width: 800px) {
   #projects {
@@ -165,6 +164,10 @@ body {
 }
 
 /* ----- Skills ----- */
+#skills {
+  padding-top: 2rem;
+}
+
 .grid-col-two {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -211,6 +214,10 @@ body {
 }
 
 /* ----- Certification ----- */
+#certifications {
+  padding-top: 2rem;
+}
+
 .certification-container {
   width: 75%;
   margin: 0 auto;
