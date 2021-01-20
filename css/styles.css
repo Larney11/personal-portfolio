@@ -123,6 +123,34 @@ body {
   }
 }
 
+.button-container {
+  float: left;
+}
+
+.button {
+  border: black 1px solid;
+  margin: 40px auto 10px auto;
+  padding: 0.5rem 1rem;
+  border: var(--yellow) 2px solid;
+  color: white;
+  background-color: var(--lightGrey);
+  background-color: transparent;
+  font-size: 20px;
+  line-height: 2rem;
+  border-radius: 2rem;
+  text-align: center;
+}
+
+.button:hover {
+  color: black;
+  background-color: var(--yellow);
+  border: var(--yellow) 2px solid;
+}
+
+.button:focus {
+  outline: 0;
+}
+
 /* ----- Projects ----- */
 #projects {
   text-align: center;
