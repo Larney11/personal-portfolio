@@ -1,6 +1,7 @@
 
 :root {
   --yellow: #efd365;
+  --darkGrey: #333;
   --grey: #595a5c;
   --lightGrey: rgb(168, 168, 168);
 }
@@ -56,32 +57,71 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 80px 20px 20px 20px;
-  background-image: linear-gradient(62deg, #e4eee6 0%, #302f31 100%);
+  background-color: var(--darkGrey);
 }
 
-#home > h1 {
-  font-family: raleway;
+#home-container {
+  width: 92%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   color: white;
-  font-size: 4rem;
-  margin: 1rem auto 0 auto;
+  padding-bottom: 140px;
 }
 
-#home > p {
-  font-family: raleway;
-  color: var(--yellow);
-  font-size: 2rem;
-  font-weight: 200;
-  font-style: italic;
+@media(max-width: 1920px) {
+  #home-container {
+    max-width: 1200px;
+  }
+}
+
+@media(max-width: 1000px) {
+  #home-container {
+    flex-direction: column;
+  }
+}
+
+.home-content {
+  text-align: left;
 }
 
 #profile-pic {
   max-width: 500px;
   min-width: 300px;
   height: auto;
-  border-radius: 50%;
-  border: 5px var(--yellow) solid;
+  border-radius: 5px;
+  box-shadow: 12px 12px 2px 1px #efd365ef;
 }
 
+#home h1 {
+  font-family: raleway;
+  color: white;
+  font-size: 4rem;
+  margin: 1rem auto 0 auto;
+}
+
+#home h2 {
+  font-family: raleway;
+  color: var(--lightGrey);
+  font-size: 2rem;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.yellow-text {
+  color: var(--yellow);
+}
+
+.slanted-bottom {
+  padding-bottom: 100px;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 100px));
+}
+
+@media(max-width: 800px) {
+  .slanted-bottom {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 60px));
+  }
+}
 
 /* ----- Projects ----- */
 #projects {
@@ -348,7 +388,7 @@ i p {
 
 /* ----- Navbar ----- */
 .topnav {
-  background-color: #333;
+  background-color: var(--darkGrey);
   overflow: hidden;
   position: fixed;
   top: 0;
@@ -402,7 +442,7 @@ i p {
   flex-direction: column;
   width: 100%;
   padding: 1rem;
-  background-color: #333;
+  background-color: var(--darkGrey);
   color: var(--lightGrey);
 }
 
