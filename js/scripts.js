@@ -15,12 +15,16 @@ $(document).ready(function(){
   });
 });
 
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
+function toggleNavDropdown() {
+  var myTopnav = document.getElementById("myTopnav");
+  var topnavIcon = document.getElementById("topnavIcon");
+
+  if (myTopnav.className === "topnav") {
+    myTopnav.className += " responsive";
+    topnavIcon.className = "fas fa-times";
   } else {
-    x.className = "topnav";
+    myTopnav.className = "topnav";
+    topnavIcon.className += "fa fa-bars";
   }
 }
 
