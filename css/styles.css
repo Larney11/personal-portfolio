@@ -183,6 +183,8 @@ body {
   color: black;
   background-color: var(--yellow);
   border: var(--yellow) 2px solid;
+  transform: scale(1.1);
+  transition: all ease .5s;
 }
 
 #home .button:focus {
@@ -445,6 +447,8 @@ i p {
   color: white;
   background-color: grey;
   border: var(--yellow) 2px solid;
+  transform: scale(1.1);
+  transition: all ease .5s;
 }
 
 .form-button:focus {
