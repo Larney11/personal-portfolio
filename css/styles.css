@@ -75,7 +75,7 @@ body {
   }
 }
 
-@media(max-width: 1000px) {
+@media(max-width: 900px) {
   #home-container {
     flex-direction: column;
   }
@@ -85,12 +85,37 @@ body {
   text-align: left;
 }
 
+#home .figure-a {
+  width: 100%;
+  margin-left: 0;
+}
+
 #profile-pic {
   max-width: 500px;
   min-width: 300px;
   height: auto;
   border-radius: 5px;
   box-shadow: 12px 12px 2px 1px #efd365ef;
+}
+
+@media(max-width: 900px) {
+  #home .profile-pic-container {
+    width: 100%;
+  }
+
+  #home .figure-a {
+    width: 100%;
+  }
+
+  #home #profile-pic {
+    width: 75%;
+  }
+}
+
+@media(max-width: 600px) {
+  #home #profile-pic {
+    width: 100%;
+  }
 }
 
 #home h1 {
@@ -121,7 +146,7 @@ body {
   }
 }
 
-.yellow-text {
+#home .yellow-text {
   color: var(--yellow);
 }
 
@@ -132,17 +157,17 @@ body {
 
 @media(max-width: 800px) {
   .slanted-bottom {
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 60px));
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 40px));
   }
 }
 
-.button-container {
+#home .button-container {
   float: left;
 }
 
-.button {
+#home .button {
   border: black 1px solid;
-  margin: 40px auto 10px auto;
+  margin: 10px auto 10px auto;
   padding: 0.5rem 1rem;
   border: var(--yellow) 2px solid;
   color: white;
@@ -154,13 +179,13 @@ body {
   text-align: center;
 }
 
-.button:hover {
+#home .button:hover {
   color: black;
   background-color: var(--yellow);
   border: var(--yellow) 2px solid;
 }
 
-.button:focus {
+#home .button:focus {
   outline: 0;
 }
 
