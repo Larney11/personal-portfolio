@@ -404,6 +404,13 @@ i p {
   width: 49%;
 }
 
+@media screen and (max-width: 900px) {
+  .form-item-half {
+    width:100%;
+    margin-top: 10px;
+  }
+}
+
 .form-item-half:nth-child(2n) {
   margin-left: auto;
 }
@@ -427,13 +434,19 @@ i p {
   font-size: 1.5rem;
 }
 
-.form-item-full:nth-child(1n) {
+.form-item-full {
   margin-top: 20px;
+}
+
+@media screen and (max-width: 900px) {
+  .form-item-full {
+    margin-top: 10px;
+  }
 }
 
 .form-button {
   border: black 1px solid;
-  margin: 40px auto 10px auto;
+  margin: 10px auto 10px auto;
   padding: 0.5rem 1rem;
   border: var(--grey) 2px solid;
   color: black;
