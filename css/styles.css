@@ -4,6 +4,10 @@
   --darkGrey: #333;
   --grey: #595a5c;
   --lightGrey: rgb(168, 168, 168);
+  --veryLightGrey: #f6f6f6;
+  
+  /* #f9f9f9 */
+  
 }
 
 html {
@@ -208,10 +212,114 @@ body {
     margin: 0 0.5rem;
   }
 }
+
+/* ----- featured projects ----- */
+.featured-projects {
+  padding-bottom: 40px;
+  width: 100%;
+}
+
+.project-preview {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.project-preview--image {
+  width: 60%;
+  padding: 40px;
+  background-color: var(--veryLightGrey);
+  border-radius: 10px;
+  margin:0;
+}
+
+#lotstodolist-screenshot {
+  border-radius: 10px;
+  width: 100%;
+  object-fit: cover;
+  box-shadow: 0 0 10px 2px var(--lightGrey);
+}
+
+.project-preview--content {
+  width: 40%;
+  padding: 0 20px;
+}
+
+.project-preview--content-header {
+  color: var(--darkGrey);
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin: 0.5em 0;
+}
+
+.paragraph-huge {
+  font-size: 1.625rem;
+  font-weight: 300;
+  color: var(--grey)
+}
+
+.spacing-tiny-top {
+  padding-top: 20px;
+}
+
+.project-preview .tag-box-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  padding-bottom: 5px;
+  padding-right: 5px;
+  width: 100%;
+}
+
+@media(max-width: 1000px) {
+  .project-preview {
+    flex-direction: column;
+  }
+
+  .project-preview--image {
+    width: 100%;
+  }
+
+  .project-preview--content {
+    width: 100%;
+  }
+}
+
+.project-preview .button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.project-preview .button {
+  border: black 1px solid;
+  margin: 10px auto 10px auto;
+  padding: 0.5rem 1rem;
+  border: var(--grey) 1px solid;
+  color: var(--darkGrey);
+  background-color: var(--yellow);
+  font-size: 20px;
+  line-height: 2rem;
+  border-radius: 2rem;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.project-preview .button:hover {
+  background-color: var(--yellow);
+  background-color: transparent;
+  border: var(--yellow) 2px solid;
+  transform: scale(1.05);
+  transition: all ease .5s;
+}
+
+.project-preview .button:focus {
+  outline: 0;
+}
+
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  /* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); */
   grid-gap: 2rem;
 }
 
@@ -229,6 +337,7 @@ body {
 
 .project-container {
   border: 2px black solid;
+  border-radius: 10px;
   text-align: center;
   padding: 0;
   margin: 0;
@@ -237,6 +346,7 @@ body {
 }
 
 .project-image {
+  border-radius: 10px;
   width: 100%;
   object-fit: cover;
 }
@@ -293,7 +403,7 @@ body {
   }
 }
 
-.tag-box-container {
+#skills .tag-box-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -311,14 +421,16 @@ body {
   margin-right: 0;
   padding-left: 1rem;
   padding-right: 1rem;
-  border: var(--grey) 2px solid;
+  border: var(--grey) 1px solid;
   color: black;
   line-height: 2rem;
   border-radius: 2rem;
 }
 
 .tag-box:hover {
-  border: var(--yellow) 2px solid;
+  border: var(--yellow) 1px solid;
+  transform: scale(1.05);
+  transition: all ease .3s;
 }
 
 /* ----- Certification ----- */
